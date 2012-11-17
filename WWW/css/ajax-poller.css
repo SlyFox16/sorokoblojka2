@@ -1,0 +1,95 @@
+	#golos{
+		text-align:center;
+	}
+	
+	#golos .poller{	/* The poller box */	
+		text-align:left;
+		width:210px;		
+		padding-top:15px;
+		background-image:url(/image/template/question.gif);
+		background-repeat:no-repeat;
+		background-position: center center;
+		margin:0 auto;;
+		min-height:161px;
+		clear:both;
+	}
+	/* Poller title above radio buttons */
+	#golos .pollerTitle{
+		margin-bottom:5px;
+		font-weight:bold;
+	}
+	/* Label for each radio button */
+	#golos .pollerOption{
+		margin:0px;
+	}
+	/* Label for each option above graph - i.e. results */
+	#golos .result_pollerOption{
+		margin:0px;
+		font-size:0.8em;
+	}
+	/* Title of poller - when ajax shows the results */
+	#golos .result_pollerTitle{
+		margin-bottom:5px;
+		font-weight:bold;
+		font-size:0.9em;
+	}
+	/* Don't change this one, it is used to get the left and right image(the corner) positioned correctly */
+	.result_pollGraph img{
+		float:left;
+	}
+	/* The <div> tag where the percentage result is shown */
+	#golos .result_pollGraph div{
+		float:left;
+		height:16px;
+		background-repeat:repeat-x;
+		color:#FFF;
+		font-size:0.9em;
+		line-height:16px;
+	}
+	/* Graph div - parent of both the corner images and the div displaying percentage votes */
+	#golos .result_pollGraph{	
+		height:16px;
+	}
+	
+	/* Message when Ajax is working getting restults fromt the server */
+	#golos .poller_waitMessage{
+		display:none;
+		text-align:center;
+		
+	}	
+	
+	#golos .result_totalVotes{
+		
+		font-size:0.8em;
+		font-style:italic;
+	}
+	
+	#golos #load{
+		margin-top:65px;
+	}
+	
+	#golos #subBut{
+		margin-top:5px;
+	}
+	
+	.poller_results
+	{
+		padding-bottom:10px;
+	}
+	
+	#golosAdm body{
+	font-family:arial;
+	}
+	#golosAdm th{
+		text-align:left;
+	}
+	#golosAdm .formButton{
+		width:75px;
+	}
+	
+	#golosAdm a{
+		color:blue;
+		text-decoration:none;
+	}
+	
+	

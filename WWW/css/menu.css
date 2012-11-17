@@ -1,0 +1,162 @@
+*{
+	margin:0px;
+	padding:0px;
+}
+
+#search {margin-right:20px; position:absolute; left:700px; top:10px;}
+input#s {padding: 3px 7px; width: 220px; height:20px; border:0 none; float:left; color: #99A0A6;}
+#searchsubmit {background:url(/image/template/search.gif) 0 2px #FFF no-repeat; height:26px; width:22px;  border: 0 none; float:left; cursor:pointer; cursor:hand;}
+:focus {outline:0 none;}
+
+#menu{
+	background:url(/image/template/nav-bg.png)repeat-x scroll 0 0 #246279;
+    border: 1px solid #2F3C4D;
+    border-radius: 4px 4px 4px 4px;
+    padding: 13px 0;
+    width: 996px;
+	float: left;
+	margin-top:141px;
+	margin-left:-1px;
+	position:relative;
+}
+
+/*------------------- Хаки для IE 7-8 --------------------------*/
+*+html #menu {
+   background:url(/image/template/nav-bg.png);
+   background-position: 0 0;
+   background-repeat: repeat-x;
+   background-color: #246279;
+}
+
+@media \0screen {
+  #menu {
+   background:url(/image/template/nav-bg.png);
+   background-position: 0 0;
+   background-repeat: repeat-x;
+   background-color: #246279;
+}
+}
+/*---------------------------------------------------------------*/
+
+#menu ul{
+	float: left;
+}
+
+* html #menu ul {
+   float: left;
+}
+
+#menu li{
+	float:left;
+	position:relative;
+	/*display:inline-block;*/
+	list-style-type:none;	
+	border-right:1px solid #444444;
+/*	margin: -2px;*/
+}
+
+/*#menu li:first-child{
+	border-left:1px solid #006699;
+}*/
+
+#menu a{
+	outline:none;
+	font-weight:bold;
+	text-decoration:none;
+	padding:13px 20px 13px;
+	width:159px;
+	color:#FFF;
+    /*border-right:1px solid #444444;*/
+}
+
+*+html #menu a{
+	padding:20px;
+}
+
+*+html #menu a:hover{
+    font-weight:bold;
+    color: #ff3333;
+	background-color: #A5A5A5;
+}
+
+                       /* Ðàêðûâàþùååñÿ ìåíþ*/
+#menu li ul{
+	/*display:none;*/
+	visibility:hidden;
+	margin:0px;
+	position:absolute;
+	width:8.82em;
+	left:-1px;
+	background-color:#f73888;
+	border-bottom: 1px solid #006699; 
+}
+
+*+html #menu li ul{
+	margin-top:20px;
+}
+
+*html #menu li ul{
+	margin-top:18px;
+}
+
+#menu li ul li{
+	width:100%;
+}
+
+#menu li:hover>ul{
+  /* display:block;*/
+  visibility:visible;
+} 
+/* Âûäåëÿåì ðîäèòåëüñêîå ìåíþ ïðè íàâåäåíèè íà äî÷åðíèå*/
+#menu li:hover>a {
+	font-weight:bold;
+    color: #ff3333;
+	background-color: #989898;
+}
+
+*html #menu ul a:hover ul {
+   visibility:visible;
+}
+
+*html #menu table {
+   position:absolute;
+   border-collapse:collapse;
+   top:0;
+   left:0;
+}
+
+                    /* Âòîðîå âëîæåííîå ìåíþ*/
+
+#menu ul li ul li ul {
+   /*visibility: hidden;*/
+   position: absolute;
+   left: 8.82em;
+   top:0px; 
+   width:9.35em;
+}
+
+#menu ul li ul li ul li a{
+	display:block;
+	width:108px;
+}
+
+*html #menu ul li ul li ul {
+	top:-18px;
+}
+/*Ñêðûâàåì âòîðîå âëîæåííîå ìåíþ êîãäà êóðñîð íàâåäåí íà 1 óðîâåíü*/
+*html #menu ul a:hover ul ul {
+   visibility:hidden;
+}
+/*Ïîêàçûâàåì âòîðîå âëîæåííîå ìåíþ*/
+*html #menu ul a:hover ul a:hover ul{
+   visibility:visible;
+}
+
+/*-------------ХАКИ ДЛЯ OPERA----------------------*/
+noindex:-o-prefocus, #menu{ 
+
+	margin-top:142px;
+}
+
+}
+/*-------------ХАКИ ДЛЯ OPERA----------------------*/
